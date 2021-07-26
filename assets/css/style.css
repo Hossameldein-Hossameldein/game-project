@@ -1,0 +1,173 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;300;400;500;600;700&display=swap');
+/* Colors */
+:root{
+    --basic-color: #ebeb17;
+    --seconed-color: #171e22;
+    --basic-font:'Encode Sans SC', sans-serif;
+}
+body{
+    background-color: var(--seconed-color) !important;
+    /* overflow-x: hidden; */
+}
+/* section header */
+.header , .footer{
+    background: rgba(0, 0, 0, 0.4);
+   
+}
+.header .status h6{
+    display: inline-block;
+}
+.header .status h6 span{
+    color: var(--basic-color);
+}
+.header .social a{
+    display: inline-block;
+    margin-right: 10px;
+}
+/* navbar in header */
+.header .navbar .collapse .navbar-nav .nav-item{
+    margin-right: 20px;
+}
+.header .navbar .collapse .navbar-nav .nav-item .nav-link{
+    color: white !important;
+    font-family: var(--basic-font);
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link:hover{
+    background-color: var(--basic-color) !important;
+    transition: .3s all;
+    border-radius: 3px;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: none !important;
+    background-color: white !important;
+    height: 2px;
+    display: block;
+    margin-bottom: 6px;
+}
+.navbar .auth{
+    font-family: var(--basic-font);
+}
+.navbar .auth .line {
+    display: inline-block;
+}
+.navbar .auth span{
+    padding: 5px;
+    background-color: var(--basic-color);
+    border-radius: 2px;
+    font-weight: bold;
+}
+/* boxes */
+.boxes .box{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 15px;
+    font-family: var(--basic-font);
+    font-weight: 500;
+}
+.boxes .box span{
+    color: var(--basic-color);
+    font-size: 18px;
+}
+/* Home page */
+.title-home span{
+    color: var(--basic-color) !important;
+}
+
+.home .btn{
+    background-color: var(--basic-color);
+    text-decoration: none;
+    color: var(--seconed-color);
+    font-family: var(--basic-font);
+    font-weight: 500;
+}
+/* social */
+.social{
+    list-style: none;
+    position: fixed;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.social li{
+    margin-bottom: 5px;
+}
+/* register page */
+.card .card-title{
+   background-color:  rgba(0, 0, 0, 0.6); 
+}
+.card .card-body{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.card .card-body form input{
+    background-color: rgba(124, 119, 119, 0.4);
+    border: none;
+}
+.card .card-body form input[type=button] ,.store #button {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: var(--basic-color);
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: var(--basic-font);
+}
+.store #button{
+    display: block;
+    width: 20%;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    perspective: 1000px;
+    transform: translate3d(0, 0, 0);
+
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+.card .card-body form input:focus{
+    border: 1px solid var(--basic-color);
+    box-shadow: none;
+}
+.confirm span{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+/* download */
+.download .box{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+.download .box a{
+    color: white;
+}
+/* ACCOUNT */
+.account .btn{
+    background-color: var(--basic-color) !important;
+    font-family: var(--basic-font);
+    color: var(--seconed-color);
+}
+.account .forget-form{
+    display: none;
+}
+/* footer */
+
+.footer a{
+    color: var(--basic-color);
+    font-weight: bolder;
+    text-decoration: none;
+}
