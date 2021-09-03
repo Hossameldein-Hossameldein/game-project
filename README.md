@@ -11,4 +11,4 @@
 - Payment with paypal
 
 ## View Project online
-### https://curse-co.com/curse-co/
+### https://curse-co.com/
